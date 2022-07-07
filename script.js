@@ -1,8 +1,8 @@
 const form = document.getElementById("form")
 const username = document.getElementById("username");
-const email = document.getElementsById('email');
+const email = document.getElementById('email');
 const password = document.getElementById('password');
-const passwordCheck = getElementById('passwordCheck');
+const passwordCheck = document.getElementById('passwordCheck');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -44,13 +44,13 @@ function checkInputs() {
         setSuccessFor(password);
     }
     if(checkPasswordValue === ''){
-        setErrorFor(password, 'Field cannot be blank');
+        setErrorFor(passwordCheck, 'Field cannot be blank');
     }
     else if(passwordValue !== checkPasswordValue){
         setErrorFor(passwordCheck, 'Passwords do not match!')
     }
     else {
-        setSuccessFor(password);
+        setSuccessFor(passwordCheck);
     }
 
 }
@@ -71,5 +71,10 @@ function setSuccessFor(input) {
 }
 
 function isEmail(email){
-    return (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email));
-}
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+        return true
+    }
+    else {
+        return false
+    }
+    }
