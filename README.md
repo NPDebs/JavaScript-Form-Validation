@@ -3,3 +3,4 @@ The magic is created with our beloved JavaScript! Conditional statements ensure 
 If the details are incorrect (or nonexistent), the input field turns red. The previously-hidden exclamation icon and error message appear (and turn red, for dramatic effect, of course)!
 If all conditions are met, the user receives a greenlight and is permitted to submit the form.
 See for yourself!
+Here's a link to the published page => https://npdebs.github.io/JavaScript-Form-Validation/
